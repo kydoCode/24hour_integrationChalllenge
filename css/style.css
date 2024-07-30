@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* GLOBAL */
+
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "open-sans";
+}
+
+:root {
+
+  /** Colors **/
+  --grey-color: rgba(242, 244, 242, 1);
+  --green-color:rgba(0, 106, 25, 1);
+  --black-color: #000000;
+  --white-color: #ffffff;
+
+  /** Fonts **/
+  --font-permanent-marker: "Permanent Marker", cursive;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-light: 100;
+
+  --font-style-normal: normal;
+  --font-style-italic: italic;
+
+  /*** Variables de taille de police ***/
+  --font-size-base: 16px;
+  --font-size-large: 24px;
+  --font-size-small: 14px;
+
+  /*** Variables d'espacement ***/
+  --line-height-base: 1.5;
+  --letter-spacing-base: 0.5px;
+
+  --font-variation-settings-open-sans: "wdth" 100;
+}
+
+
+
+/** Fonts **/
+
+.permanent-marker-regular {
+  font-family: var(--font-permanent-marker);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+}
+
+
+.open-sans {
+  font-family: var(--font-open-sans);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-normal);
+  font-variation-settings: var(--font-variation-settings-open-sans);
+}
+
+.roboto{
+/*  font-weight: 100; /* 100, 300, 400, 500, 700, 900 */
+/*  font-style: normal; */ /* italic */
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-light);
+  font-style: var(--font-style-normal);
+}
+
+/** Containers **/
+
+.container-width-1920{
+  width: 1920px;
+  padding: 0;
+}
+
+.container-width-1440{
+  width: 1440px;
+  margin: auto;
+}
+
+h1,h2 {
+  font-family: var(--font-permanent-marker);
+  font-weight: var(--font-weight-normal);
+  color: var(--green-color);
+}
+
+a {
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* HEADER */
+
+header #logo {
+  display: flex;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  margin: auto;
+}
+
+header nav ul li {
+  padding: 12.5px 50px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color:var(--black-color);
+  transition: all 0.2ms ease-in-out;
+}
+
+header nav ul:nth-child(1) li:nth-child(1) > a:nth-child(1) {
+  color:var(--green-color);
+}
+
+header nav ul li a:hover {
+  color: red;
+  transform: all 0.3ms ease-in-out;
+}
+
+/* MAIN */
+
+main #about {
+  display: flex;
+  flex-direction: row;
+}
+
+main #about article {
+  
+}
+
+/* FOOTER */
