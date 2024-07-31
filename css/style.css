@@ -95,6 +95,29 @@ ul {
   padding-left: 0;
 }
 
+.btn {
+  background-color: rgba(0, 106, 25, 1);
+  color: white;
+  padding: 12.5px 24px;
+  width: 125px;
+  height: 39px;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  /* vertical-align: middle; */
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: rgba(0, 106, 25, 0.8); 
+}
+
+
 /* HEADER */
 
 header #logo {
@@ -139,7 +162,20 @@ main #about {
 }
 
 main #about article {
-  
+  text-align: left;
+  margin: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+}
+
+main #about article .btn {
+  margin: auto;
+}
+
+main #about div {
+  width: 720px;
 }
 
 /* FOOTER */
