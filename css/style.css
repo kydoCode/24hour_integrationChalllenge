@@ -79,7 +79,7 @@
   margin: auto;
 }
 
-h1,h2 {
+h1, h2 {
   font-family: var(--font-permanent-marker);
   font-weight: var(--font-weight-normal);
   color: var(--green-color);
@@ -176,6 +176,10 @@ main #about article .btn {
 
 main #about div {
   width: 720px;
+}
+
+main #about div img {
+  padding: 10px;
 }
 
 /* FOOTER */
