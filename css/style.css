@@ -7,7 +7,7 @@
 *{
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "open-sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
@@ -15,11 +15,12 @@
   /** Colors **/
   --grey-color: rgba(242, 244, 242, 1);
   --green-color:rgba(0, 106, 25, 1);
-  --black-color: #000000;
+  --blue-color:rgba(2, 121, 126, 1);
+  --black-color:#000000;
   --white-color: #ffffff;
 
   /** Fonts **/
-  --font-permanent-marker: "Permanent Marker", cursive;
+  --font-permanent-marker: "Permanent Marker" /*, cursive*/;
   --font-open-sans: "Open Sans", sans-serif;
   --font-roboto: "Roboto", sans-serif;
 
@@ -41,17 +42,15 @@
   --font-variation-settings-open-sans: "wdth" 100;
 }
 
-
-
 /** Fonts **/
 
-.permanent-marker-regular {
+/* .permanent-marker-regular {
   font-family: var(--font-permanent-marker);
   font-weight: var(--font-weight-normal);
   font-style: var(--font-style-normal);
-}
+} */
 
-
+/* 
 .open-sans {
   font-family: var(--font-open-sans);
   font-weight: var(--font-weight-normal);
@@ -60,11 +59,115 @@
 }
 
 .roboto{
-/*  font-weight: 100; /* 100, 300, 400, 500, 700, 900 */
-/*  font-style: normal; */ /* italic */
   font-family: var(--font-roboto);
   font-weight: var(--font-weight-light);
   font-style: var(--font-style-normal);
+} */
+
+/* Open Sans classes */
+.open-sans-light {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-semibold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.open-sans-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Permanent Marker class */
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Roboto classes */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 /** Containers **/
@@ -80,10 +183,18 @@
 }
 
 h1, h2 {
-  font-family: var(--font-permanent-marker);
-  font-weight: var(--font-weight-normal);
+  /* font-family: var(--font-permanent-marker);
+  font-weight: var(--font-weight-normal); */
+  font-size: 36.81px;
   color: var(--green-color);
 }
+
+h3  {
+  /* font-family: var(--font-permanent-marker);
+  font-weight: var(--font-weight-normal); */
+  color: var(--blue-color);
+}
+
 
 a {
   font-family: var(--font-roboto);
@@ -156,9 +267,21 @@ header nav ul li a:hover {
 
 /* MAIN */
 
+#about-bg {
+  background-color: var(--grey-color);
+}
+
 main #about {
   display: flex;
   flex-direction: row;
+}
+
+.line {
+  width: 50px; /* Adjust width as needed */
+  height: 2px; /* Adjust height as needed */
+  background-color: green; /* Color of the line */
+  /* margin-right: 10px; /* Space between line and text */
+  margin: auto 10px auto 0; 
 }
 
 main #about article {
@@ -181,5 +304,87 @@ main #about div {
 main #about div img {
   padding: 10px;
 }
+
+#about-title {
+  display: flex;
+}
+
+/* Skills */
+
+.skills h2 {
+    padding: 0 50px;
+}
+
+#skills-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 20px;
+}
+
+#skills-title {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+
+#skills-title::before,
+#skills-title::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #2e8b57;
+    margin: auto 10px auto 0;
+}
+
+.skill {
+  /* background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center; */
+}
+
+.skill img {
+  /* max-width: 50px; */
+  margin-bottom: 10px;
+}
+
+.skill h3 {
+  font-size: 24px;
+  color: var(--blue-color)/* #2e8b57; */;
+  margin-bottom: 10px;
+}
+
+.skill:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background-color: red/* #2e8b57*/;
+}
+
+.skill:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background-color: #2e8b57;
+}
+
+/* .mg-left {
+  margin-left: 10px;
+} */
 
 /* FOOTER */
