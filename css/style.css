@@ -273,12 +273,13 @@ header nav ul li a:hover {
 /* MAIN */
 
 #about-bg {
-  background-color: var(--grey-color);
 }
 
 main #about {
   display: flex;
   flex-direction: row;
+  padding: 30px 240px;
+  background-color: var(--grey-color);
 }
 
 #about-title h1::before {
@@ -338,6 +339,12 @@ main #about div img {
 
 .skills {
   /* position: relative; */
+  background-color: var(--white-color);
+}
+
+.skills-container {
+  padding: 0 240px;  
+  margin: 80px 0;
 }
 
 .skills h2 {
@@ -350,7 +357,7 @@ main #about div img {
   text-align: center;
   /* justify-content: center; */
   /* align-items: center; */
-  gap: 20px;
+  /* gap: 20px; */
   /* position: relative; */
 }
 
@@ -413,6 +420,14 @@ main #about div img {
   bottom: 10px;
   width: 2px;
   background-color: #2e8b57;
+}
+
+.skill:not(:last-child) {
+  border-right: solid 1px green;
+  padding: 10px;
+  /* text-align: center; */
+  /* width: 343px; */
+  /* align-items: inherit; */
 }
 
 /* .mg-left {
