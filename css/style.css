@@ -186,13 +186,13 @@ h1, h2 {
   /* font-family: var(--font-permanent-marker);
   font-weight: var(--font-weight-normal); */
   font-size: 36.81px;
-  color: var(--green-color);
+  color: #338847 /* var(--green-color)*/ ;
 }
 
-h3  {
+h3 {
   /* font-family: var(--font-permanent-marker);
   font-weight: var(--font-weight-normal); */
-  color: var(--blue-color);
+  color: #02797e/* var(--blue-color)*/; 
 }
 
 
@@ -269,7 +269,7 @@ header nav ul li a {
 
 header nav ul li:first-child {
   /* color:var(--green-color); */
-  color:green;
+  color: #338847;
 }
 
 header nav ul li a:hover {
@@ -280,7 +280,7 @@ header nav ul li a:hover {
 /* MAIN */
 
 #about-bg {
-  background-color: darkgray;
+  /* background-color: #F2F4F2; */
 }
 
 main #about {
@@ -288,6 +288,7 @@ main #about {
   flex-direction: row;
   padding: 30px 240px;
   /* background-color: var(--grey-color); */
+  background-color: #F2F4F2;
 }
 
 #about-title h1::before {
@@ -295,7 +296,7 @@ main #about {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #2e8b57;
+  background-color: #338847;
   /* margin: auto 10px auto 0; */
   margin: 10px 10px 10px 0;
   /* position: absolute; */
@@ -312,7 +313,7 @@ main #about {
 .line {
   width: 50px; /* Adjust width as needed */
   height: 2px; /* Adjust height as needed */
-  background-color: green; /* Color of the line */
+  background-color: #338847; /* Color of the line */
   /* margin-right: 10px; /* Space between line and text */
   margin: auto 10px auto 0; 
 }
@@ -347,7 +348,7 @@ main #about div img {
 
 .skills {
   /* position: relative; */
-  background-color: var(--white-color);
+  /* background-color: #F2F4F2/* var(--white-color)*/; */
 }
 
 .skills-container {
@@ -384,7 +385,7 @@ main #about div img {
     display: inline-block;
     width: 50px;
     height: 2px;
-    background-color: #2e8b57;
+    background-color: #338847;
     margin: auto 0;
     /* margin: auto 10px auto 0; */
     /* position: absolute; */
@@ -406,7 +407,7 @@ main #about div img {
 
 .skill h3 {
   font-size: 24px;
-  color: var(--blue-color)/* #2e8b57; */;
+  color: #02797e/* var(--blue-color)/* #2e8b57; */;
   margin-bottom: 10px;
 }
 
@@ -417,7 +418,7 @@ main #about div img {
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background-color: red/* #2e8b57*/;
+  background-color: #338847/* #2e8b57*/;
 }
 
 .skill:not(:last-child)::after {
@@ -427,11 +428,11 @@ main #about div img {
   top: 10px;
   bottom: 10px;
   width: 2px;
-  background-color: #2e8b57;
+  background-color: #338847;
 }
 
 .skill:not(:last-child) {
-  border-right: solid 1px green;
+  border-right: solid 1px #338847;
   padding: 10px;
   /* text-align: center; */
   /* width: 343px; */
@@ -445,7 +446,11 @@ main #about div img {
 /* Customers */
 
 .customers {
-  background-color: cadetblue;
+  background-color: #02797e;
+}
+
+.customers h2 {
+  color: white;
 }
 
 .customers h2::before {
@@ -453,7 +458,7 @@ main #about div img {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #2e8b57;
+  background-color: white;
   /* margin: auto 10px auto 0; */
   margin: 10px 10px 10px 0;
   /* position: absolute; */
@@ -463,6 +468,7 @@ main #about div img {
 .customers ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  padding: 80px 0;
 }
 
 .customers li {
@@ -498,7 +504,7 @@ main #about div img {
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #2e8b57;
+  background-color: #338847;
   margin: auto 0;
   /* margin: auto 10px auto 0; */
   /* position: absolute; */
@@ -511,4 +517,83 @@ main #about div img {
 #projects-items {
   padding: 50px 0;
 }
+
+.projects .btn {
+  text-wrap: nowrap;
+  padding: 12px 24px;
+}
+
+/* Contact */
+
+.contact {
+  background-color: #F2F4F2;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 20px);  /* Adjusted to account for padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+#contact-containers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 140px;
+}
+
+.contact h2::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #338847;
+    margin: 10px 10px 10px 0;
+}
+
+#contact-infos {
+  margin: auto;
+}
+
 /* FOOTER */
+
+footer p{
+  color:#02797e;
+  padding: 10px;
+  text-align: center;
+}
+
+footer div {
+  padding: 15px 390px;
+}
