@@ -200,10 +200,17 @@ a {
   font-family: var(--font-roboto);
   font-weight: 600;
   font-size: var(--font-size-base);
+  text-decoration: none;
+  color:var(--black-color);
+  transition: all 0.2ms ease-in-out;
 }
 
 ul {
   padding-left: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 .btn {
@@ -273,6 +280,7 @@ header nav ul li a:hover {
 /* MAIN */
 
 #about-bg {
+  background-color: darkgray;
 }
 
 main #about {
@@ -433,5 +441,35 @@ main #about div img {
 /* .mg-left {
   margin-left: 10px;
 } */
+
+/* Customers */
+
+.customers {
+  background-color: cadetblue;
+}
+
+.customers h2::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #2e8b57;
+  /* margin: auto 10px auto 0; */
+  margin: 10px 10px 10px 0;
+  /* position: absolute; */
+}
+
+.customers ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.customers li {
+  margin: auto;
+}
+
+.customers article {
+  padding: 80px 0;
+}
 
 /* FOOTER */
