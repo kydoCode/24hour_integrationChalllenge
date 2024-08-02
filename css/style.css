@@ -287,7 +287,7 @@ main #about {
   display: flex;
   flex-direction: row;
   padding: 30px 240px;
-  background-color: var(--grey-color);
+  /* background-color: var(--grey-color); */
 }
 
 #about-title h1::before {
@@ -459,6 +459,7 @@ main #about div img {
   /* position: absolute; */
 }
 
+
 .customers ul {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -472,4 +473,28 @@ main #about div img {
   padding: 80px 0;
 }
 
+/* Projects */
+
+.projects {
+  padding: 50px 0;
+}
+
+.projects ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects::before,
+.projects::after {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #2e8b57;
+    /* margin: auto 0; */
+    /* margin: auto 10px auto 0; */
+    /* position: absolute; */
+    margin: 10px 10px 10px 0;
+}
 /* FOOTER */
