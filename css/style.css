@@ -485,16 +485,30 @@ main #about div img {
   gap: 20px;
 }
 
-.projects::before,
-.projects::after {
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 2px;
-    background-color: #2e8b57;
-    /* margin: auto 0; */
-    /* margin: auto 10px auto 0; */
-    /* position: absolute; */
-    margin: 10px 10px 10px 0;
+#projects-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 80px 240px;
+}
+
+#projects-title::before,
+#projects-title::after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #2e8b57;
+  margin: auto 0;
+  /* margin: auto 10px auto 0; */
+  /* position: absolute; */
+}
+
+.projects h2{
+  padding: 0 50px;
+}
+
+#projects-items {
+  padding: 50px 0;
 }
 /* FOOTER */
